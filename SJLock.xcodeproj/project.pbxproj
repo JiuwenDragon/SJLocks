@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9C15ED6249E168D00744DCD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C15ED5249E168D00744DCD /* AppDelegate.m */; };
+		C9C15ED9249E168D00744DCD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C15ED8249E168D00744DCD /* SceneDelegate.m */; };
+		C9C15EDC249E168D00744DCD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C15EDB249E168D00744DCD /* ViewController.m */; };
+		C9C15EDF249E168D00744DCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C15EDD249E168D00744DCD /* Main.storyboard */; };
+		C9C15EE1249E169900744DCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C15EE0249E169900744DCD /* Assets.xcassets */; };
+		C9C15EE4249E169900744DCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C15EE2249E169900744DCD /* LaunchScreen.storyboard */; };
+		C9C15EE7249E169900744DCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C15EE6249E169900744DCD /* main.m */; };
+		C9C15EF1249E169A00744DCD /* SJLockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C15EF0249E169A00744DCD /* SJLockTests.m */; };
+		C9C15EFC249E169A00744DCD /* SJLockUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C15EFB249E169A00744DCD /* SJLockUITests.m */; };
+		C9C15F15249E251600744DCD /* SJBaseDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C15F14249E251600744DCD /* SJBaseDemo.m */; };
+		C9C15F19249E263400744DCD /* OSSpinLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C15F18249E263400744DCD /* OSSpinLockDemo.m */; };
+		C9C15F20249E297800744DCD /* OS_unfair_lockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C15F1F249E297800744DCD /* OS_unfair_lockDemo.m */; };
+		C9C15F24249E2DCF00744DCD /* Pthread_mutexDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C15F23249E2DCF00744DCD /* Pthread_mutexDemo.m */; };
+		C9C15F27249E35C100744DCD /* Pthread_mutexDemo1.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C15F26249E35C100744DCD /* Pthread_mutexDemo1.m */; };
+		C9C15F2B249E477000744DCD /* NSLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C15F2A249E477000744DCD /* NSLockDemo.m */; };
+		C9C15F2F249E487500744DCD /* NSRecursiveLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C15F2E249E487500744DCD /* NSRecursiveLockDemo.m */; };
+		C9C15F33249E492500744DCD /* NSConditionDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C15F32249E492500744DCD /* NSConditionDemo.m */; };
+		C9C15F37249E4BB400744DCD /* NSConditionLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C15F36249E4BB400744DCD /* NSConditionLockDemo.m */; };
+		C9C15F3C249E4F5E00744DCD /* SerialQueueDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C15F3B249E4F5E00744DCD /* SerialQueueDemo.m */; };
+		C9C15F40249EEEE700744DCD /* SemaphoreDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C15F3F249EEEE700744DCD /* SemaphoreDemo.m */; };
+		C9C15F44249EEFFB00744DCD /* SynchronizedDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C15F43249EEFFB00744DCD /* SynchronizedDemo.m */; };
+		C9C15F48249EF6D100744DCD /* Pthread_rwlockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C15F47249EF6D100744DCD /* Pthread_rwlockDemo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9C15EED249E169A00744DCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9C15EC9249E168D00744DCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9C15ED0249E168D00744DCD;
+			remoteInfo = SJLock;
+		};
+		C9C15EF8249E169A00744DCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9C15EC9249E168D00744DCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9C15ED0249E168D00744DCD;
+			remoteInfo = SJLock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C9C15ED1249E168D00744DCD /* SJLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9C15ED4249E168D00744DCD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C9C15ED5249E168D00744DCD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C9C15ED7249E168D00744DCD /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		C9C15ED8249E168D00744DCD /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		C9C15EDA249E168D00744DCD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C9C15EDB249E168D00744DCD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C9C15EDE249E168D00744DCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C9C15EE0249E169900744DCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9C15EE3249E169900744DCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C9C15EE5249E169900744DCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9C15EE6249E169900744DCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9C15EEC249E169A00744DCD /* SJLockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SJLockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9C15EF0249E169A00744DCD /* SJLockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJLockTests.m; sourceTree = "<group>"; };
+		C9C15EF2249E169A00744DCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9C15EF7249E169A00744DCD /* SJLockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SJLockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9C15EFB249E169A00744DCD /* SJLockUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJLockUITests.m; sourceTree = "<group>"; };
+		C9C15EFD249E169A00744DCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9C15F13249E251600744DCD /* SJBaseDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJBaseDemo.h; sourceTree = "<group>"; };
+		C9C15F14249E251600744DCD /* SJBaseDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJBaseDemo.m; sourceTree = "<group>"; };
+		C9C15F17249E263400744DCD /* OSSpinLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSpinLockDemo.h; sourceTree = "<group>"; };
+		C9C15F18249E263400744DCD /* OSSpinLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSSpinLockDemo.m; sourceTree = "<group>"; };
+		C9C15F1E249E297800744DCD /* OS_unfair_lockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OS_unfair_lockDemo.h; sourceTree = "<group>"; };
+		C9C15F1F249E297800744DCD /* OS_unfair_lockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OS_unfair_lockDemo.m; sourceTree = "<group>"; };
+		C9C15F22249E2DCF00744DCD /* Pthread_mutexDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pthread_mutexDemo.h; sourceTree = "<group>"; };
+		C9C15F23249E2DCF00744DCD /* Pthread_mutexDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pthread_mutexDemo.m; sourceTree = "<group>"; };
+		C9C15F25249E35C100744DCD /* Pthread_mutexDemo1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pthread_mutexDemo1.h; sourceTree = "<group>"; };
+		C9C15F26249E35C100744DCD /* Pthread_mutexDemo1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pthread_mutexDemo1.m; sourceTree = "<group>"; };
+		C9C15F29249E477000744DCD /* NSLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSLockDemo.h; sourceTree = "<group>"; };
+		C9C15F2A249E477000744DCD /* NSLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSLockDemo.m; sourceTree = "<group>"; };
+		C9C15F2D249E487500744DCD /* NSRecursiveLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSRecursiveLockDemo.h; sourceTree = "<group>"; };
+		C9C15F2E249E487500744DCD /* NSRecursiveLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSRecursiveLockDemo.m; sourceTree = "<group>"; };
+		C9C15F31249E492500744DCD /* NSConditionDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSConditionDemo.h; sourceTree = "<group>"; };
+		C9C15F32249E492500744DCD /* NSConditionDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConditionDemo.m; sourceTree = "<group>"; };
+		C9C15F35249E4BB400744DCD /* NSConditionLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSConditionLockDemo.h; sourceTree = "<group>"; };
+		C9C15F36249E4BB400744DCD /* NSConditionLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConditionLockDemo.m; sourceTree = "<group>"; };
+		C9C15F3A249E4F5E00744DCD /* SerialQueueDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SerialQueueDemo.h; sourceTree = "<group>"; };
+		C9C15F3B249E4F5E00744DCD /* SerialQueueDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SerialQueueDemo.m; sourceTree = "<group>"; };
+		C9C15F3E249EEEE700744DCD /* SemaphoreDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SemaphoreDemo.h; sourceTree = "<group>"; };
+		C9C15F3F249EEEE700744DCD /* SemaphoreDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SemaphoreDemo.m; sourceTree = "<group>"; };
+		C9C15F42249EEFFB00744DCD /* SynchronizedDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynchronizedDemo.h; sourceTree = "<group>"; };
+		C9C15F43249EEFFB00744DCD /* SynchronizedDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SynchronizedDemo.m; sourceTree = "<group>"; };
+		C9C15F46249EF6D100744DCD /* Pthread_rwlockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pthread_rwlockDemo.h; sourceTree = "<group>"; };
+		C9C15F47249EF6D100744DCD /* Pthread_rwlockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pthread_rwlockDemo.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9C15ECE249E168D00744DCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C15EE9249E169A00744DCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C15EF4249E169A00744DCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9C15EC8249E168D00744DCD = {
+			isa = PBXGroup;
+			children = (
+				C9C15ED3249E168D00744DCD /* SJLock */,
+				C9C15EEF249E169A00744DCD /* SJLockTests */,
+				C9C15EFA249E169A00744DCD /* SJLockUITests */,
+				C9C15ED2249E168D00744DCD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9C15ED2249E168D00744DCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9C15ED1249E168D00744DCD /* SJLock.app */,
+				C9C15EEC249E169A00744DCD /* SJLockTests.xctest */,
+				C9C15EF7249E169A00744DCD /* SJLockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9C15ED3249E168D00744DCD /* SJLock */ = {
+			isa = PBXGroup;
+			children = (
+				C9C15F16249E25D700744DCD /* Locks */,
+				C9C15ED4249E168D00744DCD /* AppDelegate.h */,
+				C9C15ED5249E168D00744DCD /* AppDelegate.m */,
+				C9C15ED7249E168D00744DCD /* SceneDelegate.h */,
+				C9C15ED8249E168D00744DCD /* SceneDelegate.m */,
+				C9C15EDA249E168D00744DCD /* ViewController.h */,
+				C9C15EDB249E168D00744DCD /* ViewController.m */,
+				C9C15EDD249E168D00744DCD /* Main.storyboard */,
+				C9C15EE0249E169900744DCD /* Assets.xcassets */,
+				C9C15EE2249E169900744DCD /* LaunchScreen.storyboard */,
+				C9C15EE5249E169900744DCD /* Info.plist */,
+				C9C15EE6249E169900744DCD /* main.m */,
+			);
+			path = SJLock;
+			sourceTree = "<group>";
+		};
+		C9C15EEF249E169A00744DCD /* SJLockTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9C15EF0249E169A00744DCD /* SJLockTests.m */,
+				C9C15EF2249E169A00744DCD /* Info.plist */,
+			);
+			path = SJLockTests;
+			sourceTree = "<group>";
+		};
+		C9C15EFA249E169A00744DCD /* SJLockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C9C15EFB249E169A00744DCD /* SJLockUITests.m */,
+				C9C15EFD249E169A00744DCD /* Info.plist */,
+			);
+			path = SJLockUITests;
+			sourceTree = "<group>";
+		};
+		C9C15F09249E185600744DCD /* OSSpinLock */ = {
+			isa = PBXGroup;
+			children = (
+				C9C15F17249E263400744DCD /* OSSpinLockDemo.h */,
+				C9C15F18249E263400744DCD /* OSSpinLockDemo.m */,
+			);
+			path = OSSpinLock;
+			sourceTree = "<group>";
+		};
+		C9C15F16249E25D700744DCD /* Locks */ = {
+			isa = PBXGroup;
+			children = (
+				C9C15F45249EF6A800744DCD /* Pthread_rwlock */,
+				C9C15F41249EEFE700744DCD /* Synchronized */,
+				C9C15F3D249EEEC700744DCD /* Semaphore */,
+				C9C15F38249E4F2B00744DCD /* SerialQueue */,
+				C9C15F34249E4BA900744DCD /* NSConditionLock */,
+				C9C15F30249E491B00744DCD /* NSCondition */,
+				C9C15F2C249E486900744DCD /* NSRecursiveLock */,
+				C9C15F28249E475700744DCD /* NSLock */,
+				C9C15F21249E2DA200744DCD /* Pthread_mutex */,
+				C9C15F1A249E28DF00744DCD /* OS_unfair_lock */,
+				C9C15F09249E185600744DCD /* OSSpinLock */,
+				C9C15F13249E251600744DCD /* SJBaseDemo.h */,
+				C9C15F14249E251600744DCD /* SJBaseDemo.m */,
+			);
+			path = Locks;
+			sourceTree = "<group>";
+		};
+		C9C15F1A249E28DF00744DCD /* OS_unfair_lock */ = {
+			isa = PBXGroup;
+			children = (
+				C9C15F1E249E297800744DCD /* OS_unfair_lockDemo.h */,
+				C9C15F1F249E297800744DCD /* OS_unfair_lockDemo.m */,
+			);
+			path = OS_unfair_lock;
+			sourceTree = "<group>";
+		};
+		C9C15F21249E2DA200744DCD /* Pthread_mutex */ = {
+			isa = PBXGroup;
+			children = (
+				C9C15F22249E2DCF00744DCD /* Pthread_mutexDemo.h */,
+				C9C15F23249E2DCF00744DCD /* Pthread_mutexDemo.m */,
+				C9C15F25249E35C100744DCD /* Pthread_mutexDemo1.h */,
+				C9C15F26249E35C100744DCD /* Pthread_mutexDemo1.m */,
+			);
+			path = Pthread_mutex;
+			sourceTree = "<group>";
+		};
+		C9C15F28249E475700744DCD /* NSLock */ = {
+			isa = PBXGroup;
+			children = (
+				C9C15F29249E477000744DCD /* NSLockDemo.h */,
+				C9C15F2A249E477000744DCD /* NSLockDemo.m */,
+			);
+			path = NSLock;
+			sourceTree = "<group>";
+		};
+		C9C15F2C249E486900744DCD /* NSRecursiveLock */ = {
+			isa = PBXGroup;
+			children = (
+				C9C15F2D249E487500744DCD /* NSRecursiveLockDemo.h */,
+				C9C15F2E249E487500744DCD /* NSRecursiveLockDemo.m */,
+			);
+			path = NSRecursiveLock;
+			sourceTree = "<group>";
+		};
+		C9C15F30249E491B00744DCD /* NSCondition */ = {
+			isa = PBXGroup;
+			children = (
+				C9C15F31249E492500744DCD /* NSConditionDemo.h */,
+				C9C15F32249E492500744DCD /* NSConditionDemo.m */,
+			);
+			path = NSCondition;
+			sourceTree = "<group>";
+		};
+		C9C15F34249E4BA900744DCD /* NSConditionLock */ = {
+			isa = PBXGroup;
+			children = (
+				C9C15F35249E4BB400744DCD /* NSConditionLockDemo.h */,
+				C9C15F36249E4BB400744DCD /* NSConditionLockDemo.m */,
+			);
+			path = NSConditionLock;
+			sourceTree = "<group>";
+		};
+		C9C15F38249E4F2B00744DCD /* SerialQueue */ = {
+			isa = PBXGroup;
+			children = (
+				C9C15F3A249E4F5E00744DCD /* SerialQueueDemo.h */,
+				C9C15F3B249E4F5E00744DCD /* SerialQueueDemo.m */,
+			);
+			path = SerialQueue;
+			sourceTree = "<group>";
+		};
+		C9C15F3D249EEEC700744DCD /* Semaphore */ = {
+			isa = PBXGroup;
+			children = (
+				C9C15F3E249EEEE700744DCD /* SemaphoreDemo.h */,
+				C9C15F3F249EEEE700744DCD /* SemaphoreDemo.m */,
+			);
+			path = Semaphore;
+			sourceTree = "<group>";
+		};
+		C9C15F41249EEFE700744DCD /* Synchronized */ = {
+			isa = PBXGroup;
+			children = (
+				C9C15F42249EEFFB00744DCD /* SynchronizedDemo.h */,
+				C9C15F43249EEFFB00744DCD /* SynchronizedDemo.m */,
+			);
+			path = Synchronized;
+			sourceTree = "<group>";
+		};
+		C9C15F45249EF6A800744DCD /* Pthread_rwlock */ = {
+			isa = PBXGroup;
+			children = (
+				C9C15F46249EF6D100744DCD /* Pthread_rwlockDemo.h */,
+				C9C15F47249EF6D100744DCD /* Pthread_rwlockDemo.m */,
+			);
+			path = Pthread_rwlock;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9C15ED0249E168D00744DCD /* SJLock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9C15F00249E169A00744DCD /* Build configuration list for PBXNativeTarget "SJLock" */;
+			buildPhases = (
+				C9C15ECD249E168D00744DCD /* Sources */,
+				C9C15ECE249E168D00744DCD /* Frameworks */,
+				C9C15ECF249E168D00744DCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SJLock;
+			productName = SJLock;
+			productReference = C9C15ED1249E168D00744DCD /* SJLock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9C15EEB249E169A00744DCD /* SJLockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9C15F03249E169A00744DCD /* Build configuration list for PBXNativeTarget "SJLockTests" */;
+			buildPhases = (
+				C9C15EE8249E169A00744DCD /* Sources */,
+				C9C15EE9249E169A00744DCD /* Frameworks */,
+				C9C15EEA249E169A00744DCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9C15EEE249E169A00744DCD /* PBXTargetDependency */,
+			);
+			name = SJLockTests;
+			productName = SJLockTests;
+			productReference = C9C15EEC249E169A00744DCD /* SJLockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C9C15EF6249E169A00744DCD /* SJLockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9C15F06249E169A00744DCD /* Build configuration list for PBXNativeTarget "SJLockUITests" */;
+			buildPhases = (
+				C9C15EF3249E169A00744DCD /* Sources */,
+				C9C15EF4249E169A00744DCD /* Frameworks */,
+				C9C15EF5249E169A00744DCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9C15EF9249E169A00744DCD /* PBXTargetDependency */,
+			);
+			name = SJLockUITests;
+			productName = SJLockUITests;
+			productReference = C9C15EF7249E169A00744DCD /* SJLockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9C15EC9249E168D00744DCD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = JiuwenDragon;
+				TargetAttributes = {
+					C9C15ED0249E168D00744DCD = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					C9C15EEB249E169A00744DCD = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = C9C15ED0249E168D00744DCD;
+					};
+					C9C15EF6249E169A00744DCD = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = C9C15ED0249E168D00744DCD;
+					};
+				};
+			};
+			buildConfigurationList = C9C15ECC249E168D00744DCD /* Build configuration list for PBXProject "SJLock" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9C15EC8249E168D00744DCD;
+			productRefGroup = C9C15ED2249E168D00744DCD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9C15ED0249E168D00744DCD /* SJLock */,
+				C9C15EEB249E169A00744DCD /* SJLockTests */,
+				C9C15EF6249E169A00744DCD /* SJLockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9C15ECF249E168D00744DCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C15EE4249E169900744DCD /* LaunchScreen.storyboard in Resources */,
+				C9C15EE1249E169900744DCD /* Assets.xcassets in Resources */,
+				C9C15EDF249E168D00744DCD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C15EEA249E169A00744DCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C15EF5249E169A00744DCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9C15ECD249E168D00744DCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C15F3C249E4F5E00744DCD /* SerialQueueDemo.m in Sources */,
+				C9C15EDC249E168D00744DCD /* ViewController.m in Sources */,
+				C9C15F44249EEFFB00744DCD /* SynchronizedDemo.m in Sources */,
+				C9C15F37249E4BB400744DCD /* NSConditionLockDemo.m in Sources */,
+				C9C15ED6249E168D00744DCD /* AppDelegate.m in Sources */,
+				C9C15F15249E251600744DCD /* SJBaseDemo.m in Sources */,
+				C9C15EE7249E169900744DCD /* main.m in Sources */,
+				C9C15F2B249E477000744DCD /* NSLockDemo.m in Sources */,
+				C9C15F40249EEEE700744DCD /* SemaphoreDemo.m in Sources */,
+				C9C15F33249E492500744DCD /* NSConditionDemo.m in Sources */,
+				C9C15F48249EF6D100744DCD /* Pthread_rwlockDemo.m in Sources */,
+				C9C15ED9249E168D00744DCD /* SceneDelegate.m in Sources */,
+				C9C15F24249E2DCF00744DCD /* Pthread_mutexDemo.m in Sources */,
+				C9C15F20249E297800744DCD /* OS_unfair_lockDemo.m in Sources */,
+				C9C15F19249E263400744DCD /* OSSpinLockDemo.m in Sources */,
+				C9C15F2F249E487500744DCD /* NSRecursiveLockDemo.m in Sources */,
+				C9C15F27249E35C100744DCD /* Pthread_mutexDemo1.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C15EE8249E169A00744DCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C15EF1249E169A00744DCD /* SJLockTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C15EF3249E169A00744DCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C15EFC249E169A00744DCD /* SJLockUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9C15EEE249E169A00744DCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9C15ED0249E168D00744DCD /* SJLock */;
+			targetProxy = C9C15EED249E169A00744DCD /* PBXContainerItemProxy */;
+		};
+		C9C15EF9249E169A00744DCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9C15ED0249E168D00744DCD /* SJLock */;
+			targetProxy = C9C15EF8249E169A00744DCD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9C15EDD249E168D00744DCD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9C15EDE249E168D00744DCD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C9C15EE2249E169900744DCD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9C15EE3249E169900744DCD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9C15EFE249E169A00744DCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C9C15EFF249E169A00744DCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9C15F01249E169A00744DCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SJLock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JiuwenDragon.SJLock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C9C15F02249E169A00744DCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SJLock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JiuwenDragon.SJLock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C9C15F04249E169A00744DCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SJLockTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JiuwenDragon.SJLockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SJLock.app/SJLock";
+			};
+			name = Debug;
+		};
+		C9C15F05249E169A00744DCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SJLockTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JiuwenDragon.SJLockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SJLock.app/SJLock";
+			};
+			name = Release;
+		};
+		C9C15F07249E169A00744DCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SJLockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JiuwenDragon.SJLockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SJLock;
+			};
+			name = Debug;
+		};
+		C9C15F08249E169A00744DCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SJLockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JiuwenDragon.SJLockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SJLock;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9C15ECC249E168D00744DCD /* Build configuration list for PBXProject "SJLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C15EFE249E169A00744DCD /* Debug */,
+				C9C15EFF249E169A00744DCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9C15F00249E169A00744DCD /* Build configuration list for PBXNativeTarget "SJLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C15F01249E169A00744DCD /* Debug */,
+				C9C15F02249E169A00744DCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9C15F03249E169A00744DCD /* Build configuration list for PBXNativeTarget "SJLockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C15F04249E169A00744DCD /* Debug */,
+				C9C15F05249E169A00744DCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9C15F06249E169A00744DCD /* Build configuration list for PBXNativeTarget "SJLockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C15F07249E169A00744DCD /* Debug */,
+				C9C15F08249E169A00744DCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9C15EC9249E168D00744DCD /* Project object */;
+}
